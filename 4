@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OP. GDEG — D-DAY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
+<style>
+/* ▼ 색 — 러브로그 홈 테마와 맞춘 값입니다. 테마를 바꾸면 여기만 고치세요 */
+:root {
+  --pri:  #00ffbf;   /* 포인트색 */
+  --ink:  #eceded;   /* 글자색 */
+  --card: #161718;   /* 카드 바탕 */
+  --line: #2f3133;   /* 선 */
+}
+html, body { margin: 0; padding: 0; background: transparent; overflow: hidden; }
+/* 위젯은 300px 폭으로 그려 두고, 불러온 칸 폭에 맞춰 통째로 확대 · 축소합니다 */
+#wrap { width: 300px; }
+
+/* 깜빡임 — 러브로그가 <style>을 지워도 나머지 모양은 그대로입니다 */
+#opx04 .opx-blink { animation: opx-blink 1.6s steps(1) infinite; }
+@keyframes opx-blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { #opx04 .opx-blink { animation: none; } }
+
+</style>
+</head>
+<body>
+<div id="wrap">
+<div id="opx04" style="position:relative;overflow:hidden;color:var(--ink,#e9ecee);background:var(--card,#121314);border:1px solid var(--line,rgba(255,255,255,.14));font-family:Archivo,'Noto Sans KR',sans-serif;line-height:1">
+
+  <!-- ① 맨 위 띠 : 작전명 · 파일 번호 -->
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 12px;border-bottom:1px solid var(--line,rgba(255,255,255,.14));font-size:8px;font-weight:800;letter-spacing:.22em">
+    <span><span style="display:inline-block;width:5px;height:5px;margin-right:7px;vertical-align:1px;background:var(--pri,#00ffbf)"></span>OP. GDEG</span>
+    <span style="opacity:.5;font-family:'IBM Plex Mono',monospace;letter-spacing:.08em">FILE 2080-004</span>
+  </div>
+
+  <!-- ② 대상 사진 : 주사선 · 조준선 · HUD -->
+  <div style="position:relative;aspect-ratio:16/9;background:#000 url('https://firebasestorage.googleapis.com/v0/b/lovelog-cc579.firebasestorage.app/o/u%2Fnf8vHDHbkDNlcMgGmHHZAym66lj2%2Fmts6y4kdwnw67.jpg?alt=media&token=1f824bce-7766-47ee-9f9f-dd39a7119c4b') center/cover no-repeat">
+    <div style="position:absolute;inset:0;background:repeating-linear-gradient(rgba(0,0,0,.22) 0 1px,transparent 1px 3px),radial-gradient(ellipse at center,transparent 45%,rgba(0,0,0,.6))"></div>
+    <!-- 조준선 -->
+    <div style="position:absolute;left:50%;top:50%;width:34px;height:34px;transform:translate(-50%,-50%);border:1px solid rgba(255,255,255,.55);border-radius:50%"></div>
+    <div style="position:absolute;left:50%;top:50%;width:76px;height:1px;transform:translate(-50%,-50%);background:linear-gradient(90deg,rgba(255,255,255,.55) 0 30px,transparent 30px 46px,rgba(255,255,255,.55) 46px)"></div>
+    <div style="position:absolute;left:50%;top:50%;width:1px;height:76px;transform:translate(-50%,-50%);background:linear-gradient(rgba(255,255,255,.55) 0 30px,transparent 30px 46px,rgba(255,255,255,.55) 46px)"></div>
+    <!-- 네 모서리 -->
+    <div style="position:absolute;inset:8px;background:linear-gradient(#fff,#fff) left top/11px 1.5px no-repeat,linear-gradient(#fff,#fff) left top/1.5px 11px no-repeat,linear-gradient(#fff,#fff) right top/11px 1.5px no-repeat,linear-gradient(#fff,#fff) right top/1.5px 11px no-repeat,linear-gradient(#fff,#fff) left bottom/11px 1.5px no-repeat,linear-gradient(#fff,#fff) left bottom/1.5px 11px no-repeat,linear-gradient(#fff,#fff) right bottom/11px 1.5px no-repeat,linear-gradient(#fff,#fff) right bottom/1.5px 11px no-repeat"></div>
+    <!-- HUD 글자 -->
+    <div style="position:absolute;top:15px;left:17px;font-size:7.5px;font-weight:800;letter-spacing:.2em;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.8)">SUBJ. 4 · R</div>
+    <div style="position:absolute;top:15px;right:17px;font-size:7.5px;font-weight:800;letter-spacing:.2em;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.8)"><span class="opx-blink" style="display:inline-block;width:5px;height:5px;margin-right:5px;border-radius:50%;vertical-align:1px;background:rgb(200,38,30)"></span>REC</div>
+    <div style="position:absolute;bottom:15px;left:17px;font:500 7.5px/1 'IBM Plex Mono',monospace;letter-spacing:.08em;color:#fff;opacity:.85;text-shadow:0 1px 4px rgba(0,0,0,.8)">52.52N 13.40E</div>
+    <!-- 기밀 도장 -->
+    <div style="position:absolute;bottom:12px;right:14px;padding:3px 6px;border:1.5px solid rgba(200,38,30,.9);color:rgb(220,60,50);font-size:7.5px;font-weight:900;letter-spacing:.24em;transform:rotate(-7deg);background:rgba(0,0,0,.35)">CLASSIFIED</div>
+  </div>
+
+  <!-- ③ 작전 일수 -->
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;padding:16px 14px 14px;border-bottom:1px dashed var(--line,rgba(255,255,255,.14))">
+    <div>
+      <div style="font-size:7.5px;font-weight:800;letter-spacing:.24em;opacity:.5;margin-bottom:8px">MISSION DAY</div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:30px;font-weight:600;letter-spacing:-.02em"><span style="opacity:.35;font-size:.55em;vertical-align:.55em;margin-right:2px">D+</span><span class="opx-day">127</span></div>
+    </div>
+    <div style="text-align:right">
+      <div style="font-size:7.5px;font-weight:800;letter-spacing:.24em;opacity:.5;margin-bottom:8px">STATUS</div>
+      <div style="font-size:9px;font-weight:800;letter-spacing:.2em;color:var(--pri,#00ffbf)"><span class="opx-blink" style="display:inline-block;width:5px;height:5px;margin-right:6px;vertical-align:1px;background:var(--pri,#00ffbf)"></span>ACTIVE</div>
+    </div>
+  </div>
+
+  <!-- ④ 다음 목표 -->
+  <div style="padding:14px 14px 16px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <span style="font-size:7.5px;font-weight:800;letter-spacing:.24em"><span style="display:inline-block;width:9px;height:9px;margin-right:6px;vertical-align:-1px;background:currentColor;-webkit-mask:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='black' stroke-width='1.8'%3E%3Cpath d='M2 2l10 10M12 4.5V12H4.5'/%3E%3C/svg%3E&quot;) center/contain no-repeat;mask:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='black' stroke-width='1.8'%3E%3Cpath d='M2 2l10 10M12 4.5V12H4.5'/%3E%3C/svg%3E&quot;) center/contain no-repeat"></span>NEXT OBJECTIVE</span>
+      <span class="opx-phase" style="font:500 7.5px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;opacity:.5">PHASE 02</span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:auto 1fr;gap:7px 14px;font-size:8px;font-weight:800;letter-spacing:.2em;align-items:baseline">
+      <span style="opacity:.45">OBJ.</span><span class="opx-obj" style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.04em">D+200</span>
+      <span style="opacity:.45">ETA</span><span class="opx-eta" style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.04em">2027.02.05</span>
+    </div>
+
+    <!-- 카운트다운 -->
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;margin:14px 0 10px;padding:10px 12px;border:1px solid color-mix(in srgb,var(--pri,#00ffbf) 45%,transparent);background:color-mix(in srgb,var(--pri,#00ffbf) 6%,transparent)">
+      <span style="font-size:7.5px;font-weight:800;letter-spacing:.24em;line-height:1.5">T-MINUS<br><span style="opacity:.5">DAYS LEFT</span></span>
+      <span class="opx-left" style="font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;letter-spacing:.02em;color:var(--pri,#00ffbf)">073</span>
+    </div>
+
+    <!-- 진행 막대 : 칸 하나 = 5일 -->
+    <div style="position:relative;height:8px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.14) 0 6px,transparent 6px 9px)">
+      <div class="opx-bar" style="position:absolute;left:0;top:0;bottom:0;width:27%;background:repeating-linear-gradient(90deg,var(--pri,#00ffbf) 0 6px,transparent 6px 9px)"></div>
+    </div>
+    <div style="display:flex;justify-content:space-between;margin-top:7px;font:500 7.5px/1 'IBM Plex Mono',monospace;letter-spacing:.06em;opacity:.5">
+      <span class="opx-from">D+100</span><span class="opx-pct">27%</span><span class="opx-to">D+200</span>
+    </div>
+  </div>
+
+  <!-- ⑤ 맨 아래 : 바코드 · 등급 -->
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 12px;border-top:1px solid var(--line,rgba(255,255,255,.14))">
+    <span style="width:84px;height:11px;opacity:.4;background:repeating-linear-gradient(90deg,currentColor 0 2px,transparent 2px 4px,currentColor 4px 5px,transparent 5px 8px,currentColor 8px 11px,transparent 11px 13px)"></span>
+    <span style="font-size:7px;font-weight:800;letter-spacing:.24em;opacity:.45">CLEARANCE = FOUR</span>
+  </div>
+</div>
+</div>
+<script>
+
+(function () {
+  /* ▼ 시작일 (1일째) — 연, 월(1~12), 일 */
+  var Y = 2026, M = 7, D = 21;
+  /* ▼ 몇 일 단위로 기념일을 셀지 */
+  var STEP = 100;
+
+  var box = document.getElementById('opx04');
+  if (!box) return;
+  var start = new Date(Y, M - 1, D);
+  var n = new Date();
+  var today = new Date(n.getFullYear(), n.getMonth(), n.getDate());
+  var day = Math.round((today - start) / 864e5) + 1;
+  var prev = Math.floor(day / STEP) * STEP;
+  var next = prev + STEP;
+  var eta = new Date(start.getTime()); eta.setDate(eta.getDate() + next - 1);
+  var p2 = function (v) { return (v < 10 ? '0' : '') + v; };
+  var p3 = function (v) { return (v < 10 ? '00' : v < 100 ? '0' : '') + v; };
+  var pct = Math.round((day - prev) / STEP * 100);
+  var set = function (c, t) { var e = box.querySelector('.' + c); if (e) e.textContent = t; };
+  set('opx-day', day);
+  set('opx-obj', 'D+' + next);
+  set('opx-eta', eta.getFullYear() + '.' + p2(eta.getMonth() + 1) + '.' + p2(eta.getDate()));
+  set('opx-left', p3(next - day));
+  set('opx-phase', 'PHASE ' + p2(next / STEP));
+  set('opx-from', 'D+' + prev);
+  set('opx-to', 'D+' + next);
+  set('opx-pct', pct + '%');
+  var bar = box.querySelector('.opx-bar'); if (bar) bar.style.width = pct + '%';
+})();
+
+/* 칸 폭에 맞춰 확대 · 축소 */
+(function () {
+  function fit() { document.getElementById('wrap').style.zoom = (window.innerWidth / 300); }
+  fit(); window.addEventListener('resize', fit);
+})();
+</script>
+</body>
+</html>
